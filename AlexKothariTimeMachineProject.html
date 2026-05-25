@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Time Traveler's Guide to Akbar's Court</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+
+    body {
+      margin: 0;
+      font-family: 'Lora', serif;
+      background-color: #f4ead7;
+      color: #2f1d14;
+      line-height: 1.8;
+    }
+
+    header {
+      background: linear-gradient(rgba(60,20,10,0.7), rgba(60,20,10,0.7)),
+      url('https://upload.wikimedia.org/wikipedia/commons/0/0e/Akbarnama.jpg');
+
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 4rem;
+      margin-bottom: 10px;
+    }
+
+    header h2 {
+      font-weight: normal;
+      font-size: 1.5rem;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #6e1f1f;
+      padding: 12px;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 0.95rem;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #f0d9a5;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 80px 25px;
+      border-bottom: 1px solid #d4b483;
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3rem;
+      color: #6e1f1f;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .image {
+      display: block;
+      height: auto;
+      margin: 30px auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    .large-image {
+      max-width: 90%;
+    }
+
+    .medium-image {
+      max-width: 65%;
+    }
+
+    .small-image {
+      max-width: 40%;
+    }
+
+    .image-row {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .caption {
+    text-align: center;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: -10px;
+    color: #6b5b4d;
+  }
+
+    .side-image {
+      width: 45%;
+      min-width: 280px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}   
+
+    .travel-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+.travel-card {
+  background-color: #f8f1e2;
+  border: 2px solid #c8a46b;
+  padding: 20px;
+  border-radius: 14px;
+  transition: 0.3s;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.travel-image {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.travel-card:hover {
+  transform: translateY(-6px);
+  background-color: #efe0c3;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.travel-card h3 {
+  margin-top: 0;
+  color: #6e1f1f;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.7rem;
+}
+
+.travel-card p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+    .tip-box {
+      background-color: #efe0c3;
+      border-left: 6px solid #9c6b30;
+      padding: 20px;
+      margin-top: 30px;
+      border-radius: 8px;
+    }
+
+    .source-box {
+      background-color: #f8f1e2;
+      border: 2px solid #9c6b30;
+      padding: 25px;
+      margin-top: 30px;
+      border-radius: 12px;
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #4a1717;
+      color: white;
+    }
+
+    ul {
+      line-height: 2;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>The Time Traveler's Guide to Akbar's Court</h1>
+
+  <h2>
+    Witnessing the Creation of the Razmnāma in Fatehpur Sikri, 1582
+  </h2>
+
+  <p>By Alex Kothari</p>
+</header>
+
+<nav>
+  <a href="#traveler">Traveler</a>
+  <a href="#why">Why This Event?</a>
+  <a href="#arrival">Arrival</a>
+  <a href="#court">Akbar's Court</a>
+  <a href="#razmnama">Razmnāma</a>
+  <a href="#significance">Significance</a>
+  <a href="#source">Primary Source</a>
+  <a href="#bibliography">Bibliography</a>
+</nav>
+
+<section id="traveler">
+
+  <h2>Meet the Traveler</h2>
+
+  <p>
+    My name is Alex Kothari and I am a historical traveler specializing in early modern empires. I recently journeyed to Fatehpur Sikri, the capital of the Mughal Empire during the reign of Emperor Akbar. I had long been fascinated by stories of Akbar's court, which was famous for its scholars, artists, and religious discussions. However, the main reason I chose this destination was to witness one of the most remarkable cultural projects of the sixteenth century: the creation of the Razmnāma, a Persian translation of the ancient Hindu epic, the Mahabharata.
+  </p>
+
+  <img class="image small-image" src="Akbar.jpg">
+
+   <p class="caption">
+  Emperor Akbar
+  </p>
+
+  <h2 style="font-size: 2.3rem; margin-top: 70px;">
+  Previous Expeditions
+</h2>
+
+<div class="travel-grid">
+
+  <div class="travel-card">
+
+    <img class="travel-image" src="Maqamat_hariri.jpg">
+
+    <h3>The House of Wisdom</h3>
+
+    <p>
+      Baghdad, 9th century. Observed scholars translating Greek scientific and philosophical works into Arabic during the Abbasid Golden Age.
+    </p>
+
+  </div>
+
+  <div class="travel-card">
+
+    <img class="travel-image" src="library.jpg">
+
+    <h3>Library of Alexandria</h3>
+
+    <p>
+      Egypt, 2nd century BCE. Studied one of the ancient world’s greatest centers of learning and manuscript preservation.
+    </p>
+
+  </div>
+
+  <div class="travel-card">
+
+    <img class="travel-image" src="firenze.webp">
+
+    <h3>Renaissance Florence</h3>
+
+    <p>
+      Italy, early 1500s. Explored the workshops of artists and humanist scholars during the Italian Renaissance.
+    </p>
+
+  </div>
+
+  <div class="travel-card">
+
+    <img class="travel-image" src="Temple_No.-_3,_Nalanda_Archaeological_Site.jpg">
+
+    <h3>Nalanda University</h3>
+
+    <p>
+      India, 7th century. Visited one of the world’s earliest great universities and centers of Buddhist learning.
+    </p>
+
+  </div>
+
+</div>
+
+</section>
+
+<section id="why">
+
+  <h2>Why Visit Akbar's Court?</h2>
+
+  <p>
+    I chose to visit the Mughal Empire during the 1580s because Akbar's court represented one of the most culturally diverse places in the world at the time. Unlike many rulers of his era, Akbar encouraged discussions between people of different religions and backgrounds.
+  </p>
+
+  <p>
+    The creation of the Razmnāma especially interested me because it symbolized cultural blending within the Mughal Empire. By translating the Mahabharata from Sanskrit into Persian, Akbar hoped to promote greater understanding between Hindu and Muslim elites.
+  </p>
+
+  <img class="image medium-image" src="india_map.webp">
+
+  <p class="caption">
+  Map of India during the Mughal Rule, 1526-1707
+  </p>
+
+</section>
+
+<section id="arrival">
+
+  <h2>Arrival in Fatehpur Sikri</h2>
+
+  <p>
+    After stepping out of the time machine in northern India, I began my journey toward Fatehpur Sikri, Akbar's magnificent capital city. The roads leading toward the city were crowded with merchants, travelers, soldiers, and caravans carrying goods from across Asia.
+  </p>
+
+  <p>
+    As I approached the city, enormous red sandstone buildings rose above the dusty landscape. The heat was intense, and the air smelled of spices, smoke, and incense drifting from busy marketplaces.
+  </p>
+
+  <div class="image-row">
+
+    <img class="side-image" src="Fatehput_Sikiri.jpg">
+
+    <img class="side-image" src="fatehpur-sikri-map.jpg">
+   
+  </div>
+
+  <div class="tip-box">
+
+    <strong>Traveler Tip:</strong>
+
+    Avoid arriving during the hottest hours of the afternoon. The summer heat in northern India can be exhausting for inexperienced travelers.
+
+  </div>
+
+</section>
+
+<section id="court">
+
+  <h2>Inside Akbar's Court</h2>
+
+  <p>
+    Entering Akbar's court was one of the most intimidating experiences of my journey. Nobles, military officers, artists, and scholars gathered in massive audience halls decorated with intricate carvings and colorful textiles.
+  </p>
+
+  <p>
+    Emperor Akbar himself appeared calm, curious, and deeply interested in intellectual discussion. Court officials explained that Akbar frequently invited scholars from different religions to debate important questions.
+  </p>
+
+  <img class="image medium-image" src="Akbar's_court.jpg">
+
+  <p class="caption">
+  Illustration from a Mughal manuscript workshop during Akbar’s reign.
+  </p>
+
+  <div class="tip-box">
+
+    <strong>Traveler Tip:</strong>
+
+    Visitors should bow respectfully before speaking in court and avoid interrupting religious discussions.
+
+  </div>
+
+</section>
+
+<section id="razmnama">
+
+  <h2>Witnessing the Creation of the Razmnāma</h2>
+
+  <p>
+    The most unforgettable part of my journey was visiting the scholars and artists responsible for creating the Razmnāma. Inside a large palace workshop, Hindu scholars recited passages from the Mahabharata in Sanskrit while Persian translators worked carefully to rewrite the text for Mughal readers.
+  </p>
+
+  <p>
+    Nearby, court artists painted magnificent illustrations for the manuscript. The pages were decorated with brilliant colors, gold leaf, and incredibly detailed scenes from the epic.
+  </p>
+
+  <p>
+    The room smelled of ink, paint, parchment, and incense. Scribes copied text carefully while officials supervised the project. Everyone seemed aware that they were participating in something historically important.
+  </p>
+
+  <img class="image large-image" src="2-Figure3-1.png">
+
+  <p class="caption">
+  Abul Fazl presenting Razmnāma manuscript to Akbar
+  </p>
+
+  <div class="tip-box">
+
+    <strong>Traveler Tip:</strong>
+
+    Do not touch the manuscript pages without permission. The illustrated copies are considered priceless works of art.
+
+  </div>
+
+</section>
+
+<section id="significance">
+
+  <h2>Why the Razmnāma Mattered</h2>
+
+  <p>
+    At first glance, the Razmnāma might appear to be only a translation project. However, after spending time in Akbar's court, it became clear that the manuscript carried enormous political and cultural significance.
+  </p>
+
+  <p>
+    Akbar ruled over a large empire with both Muslim and Hindu populations. By translating the Mahabharata into Persian, he encouraged Persian-speaking elites to better understand Indian traditions and beliefs.
+  </p>
+
+  <p>
+    In many ways, the Razmnāma represented the Mughal Empire at its height: wealthy, intellectual, artistic, and culturally diverse.
+  </p>
+
+  <p>
+  The Razmnāma also demonstrated Akbar’s broader political strategy. By supporting translations of important Hindu texts, Akbar strengthened relationships with Hindu nobles and presented himself as a ruler of all peoples within the Mughal Empire rather than only a Muslim emperor. The project reflected his policy of <em>sulh-i-kul</em>, or “universal peace,” which encouraged tolerance and cooperation between religious communities.
+  </p>
+
+  <p>
+  Few rulers during this period invested so heavily in translating religious texts from another tradition, which made the Razmnāma highly unusual for its time.
+  </p>
+
+</section>
+
+<section id="source">
+
+  <h2>Primary Source Spotlight</h2>
+
+  <div class="source-box">
+
+    “However, since it is the custom of the dust-covered travellers on the highway of supplication to assume that the few matters that they have acquired – in accordance with their insight, knowledge, strength and capability, from the book of perfection and the chapter of gnosis – are free of the contamination of deficiencies, and to present them in the royal pavilion of Oneness and the chamber of Eternity, naming them ‘thankfulness’ and ‘praise of God’ – necessarily I followed the customs and writings of this group and made my pen step on this path.”
+
+    <br><br>
+
+    — Abu'l-Fazl, court historian of Akbar, late 1500s
+
+  </div>
+
+  <p>
+    This quote demonstrates how intellectual life in Akbar's court emphasized scholarship, reflection, and cultural exchange. Abu'l-Fazl's writing reflects the sophisticated literary culture surrounding the Razmnāma project and helps historians understand the importance of knowledge and translation in the Mughal Empire.
+  </p>
+
+</section>
+
+<section id="bibliography">
+
+  <h2>Bibliography</h2>
+
+  <ul>
+
+    <li>“’Abd al-Rahim Ibn Muhammad Bairam Khan Khan-i Khanan - ‘The White Horse Got Stuck to a Rock in Mount Vindhyachal’, Folio from a Razmnama - The Metropolitan Museum of Art.” The MET.</li>
+
+    <li>Alam, Muzaffar, and Sanjay Subrahmanyam. <em>Writing the Mughal World</em>. New York: Columbia University Press, 2011.</li>
+
+    <li>Ballhatchet, K.A. "Akbar." Encyclopedia Britannica, April 14, 2026.</li>
+
+    <li>“The Book of War.” Philadelphia Museum of Art.</li>
+
+    <li>Eaton, Richard M. <em>India in the Persianate Age: 1000–1765</em>. University of California Press, 2019.</li>
+
+    <li>Richards, John F. <em>The Mughal Empire</em>. Cambridge University Press, 1993.</li>
+
+  </ul>
+
+</section>
+
+<footer>
+
+  <h2>Final Reflection</h2>
+
+  <p>
+    “The pursuit of knowledge is the noblest duty of mankind.” — Attributed to Akbar
+  </p>
+
+  <p>
+  The Razmnāma reminds modern audiences that translation and cultural exchange have long shaped the development of global civilizations.
+</p>
+
+</footer>
+
+</body>
+</html>
