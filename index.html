@@ -107,12 +107,12 @@
     }
 
     .caption {
-    text-align: center;
-    font-size: 0.9rem;
-    font-style: italic;
-    margin-top: -10px;
-    color: #6b5b4d;
-  }
+      text-align: center;
+      font-size: 0.9rem;
+      font-style: italic;
+      margin-top: -10px;
+      color: #6b5b4d;
+    }
 
     .side-image {
       width: 45%;
@@ -121,7 +121,7 @@
       object-fit: cover;
       border-radius: 12px;
       box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-}   
+    }
 
     .travel-grid {
       display: grid;
@@ -130,41 +130,41 @@
       margin-top: 40px;
     }
 
-.travel-card {
-  background-color: #f8f1e2;
-  border: 2px solid #c8a46b;
-  padding: 20px;
-  border-radius: 14px;
-  transition: 0.3s;
-  cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
+    .travel-card {
+      background-color: #f8f1e2;
+      border: 2px solid #c8a46b;
+      padding: 20px;
+      border-radius: 14px;
+      transition: 0.3s;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
 
-.travel-image {
-  width: 100%;
-  height: 170px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
+    .travel-image {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
 
-.travel-card:hover {
-  transform: translateY(-6px);
-  background-color: #efe0c3;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
-}
+    .travel-card:hover {
+      transform: translateY(-6px);
+      background-color: #efe0c3;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    }
 
-.travel-card h3 {
-  margin-top: 0;
-  color: #6e1f1f;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.7rem;
-}
+    .travel-card h3 {
+      margin-top: 0;
+      color: #6e1f1f;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.7rem;
+    }
 
-.travel-card p {
-  margin-bottom: 0;
-  font-size: 0.95rem;
-}
+    .travel-card p {
+      margin-bottom: 0;
+      font-size: 0.95rem;
+    }
 
     .tip-box {
       background-color: #efe0c3;
@@ -192,6 +192,18 @@
 
     ul {
       line-height: 2;
+    }
+
+    /* Chicago hanging indent */
+    ul.bibliography {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul.bibliography li {
+      margin-bottom: 12px;
+      padding-left: 2em;
+      text-indent: -2em;
     }
 
   </style>
@@ -230,65 +242,37 @@
 
   <img class="image small-image" src="Akbar.jpg">
 
-   <p class="caption">
-  Emperor Akbar
-  </p>
+  <p class="caption">Emperor Akbar</p>
 
-  <h2 style="font-size: 2.3rem; margin-top: 70px;">
-  Previous Expeditions
-</h2>
+  <h2 style="font-size: 2.3rem; margin-top: 70px;">Previous Expeditions</h2>
 
-<div class="travel-grid">
+  <div class="travel-grid">
 
-  <div class="travel-card">
+    <div class="travel-card">
+      <img class="travel-image" src="Maqamat_hariri.jpg">
+      <h3>The House of Wisdom</h3>
+      <p>Baghdad, 9th century. Observed scholars translating Greek scientific and philosophical works into Arabic during the Abbasid Golden Age.</p>
+    </div>
 
-    <img class="travel-image" src="Maqamat_hariri.jpg">
+    <div class="travel-card">
+      <img class="travel-image" src="library.jpg">
+      <h3>Library of Alexandria</h3>
+      <p>Egypt, 2nd century BCE. Studied one of the ancient world’s greatest centers of learning and manuscript preservation.</p>
+    </div>
 
-    <h3>The House of Wisdom</h3>
+    <div class="travel-card">
+      <img class="travel-image" src="firenze.webp">
+      <h3>Renaissance Florence</h3>
+      <p>Italy, early 1500s. Explored the workshops of artists and humanist scholars during the Italian Renaissance.</p>
+    </div>
 
-    <p>
-      Baghdad, 9th century. Observed scholars translating Greek scientific and philosophical works into Arabic during the Abbasid Golden Age.
-    </p>
-
-  </div>
-
-  <div class="travel-card">
-
-    <img class="travel-image" src="library.jpg">
-
-    <h3>Library of Alexandria</h3>
-
-    <p>
-      Egypt, 2nd century BCE. Studied one of the ancient world’s greatest centers of learning and manuscript preservation.
-    </p>
+    <div class="travel-card">
+      <img class="travel-image" src="Temple_No.-_3,_Nalanda_Archaeological_Site.jpg">
+      <h3>Nalanda University</h3>
+      <p>India, 7th century. Visited one of the world’s earliest great universities and centers of Buddhist learning.</p>
+    </div>
 
   </div>
-
-  <div class="travel-card">
-
-    <img class="travel-image" src="firenze.webp">
-
-    <h3>Renaissance Florence</h3>
-
-    <p>
-      Italy, early 1500s. Explored the workshops of artists and humanist scholars during the Italian Renaissance.
-    </p>
-
-  </div>
-
-  <div class="travel-card">
-
-    <img class="travel-image" src="Temple_No.-_3,_Nalanda_Archaeological_Site.jpg">
-
-    <h3>Nalanda University</h3>
-
-    <p>
-      India, 7th century. Visited one of the world’s earliest great universities and centers of Buddhist learning.
-    </p>
-
-  </div>
-
-</div>
 
 </section>
 
@@ -306,9 +290,7 @@
 
   <img class="image medium-image" src="india_map.webp">
 
-  <p class="caption">
-  Map of India during the Mughal Rule, 1526-1707
-  </p>
+  <p class="caption">Map of India during the Mughal Rule, 1526-1707</p>
 
 </section>
 
@@ -325,19 +307,13 @@
   </p>
 
   <div class="image-row">
-
     <img class="side-image" src="Fatehput_Sikiri.jpg">
-
     <img class="side-image" src="fatehpur-sikri-map.jpg">
-   
   </div>
 
   <div class="tip-box">
-
     <strong>Traveler Tip:</strong>
-
     Avoid arriving during the hottest hours of the afternoon. The summer heat in northern India can be exhausting for inexperienced travelers.
-
   </div>
 
 </section>
@@ -356,16 +332,11 @@
 
   <img class="image medium-image" src="Akbar's_court.jpg">
 
-  <p class="caption">
-  Illustration from a Mughal manuscript workshop during Akbar’s reign.
-  </p>
+  <p class="caption">Illustration from a Mughal manuscript workshop during Akbar’s reign.</p>
 
   <div class="tip-box">
-
     <strong>Traveler Tip:</strong>
-
     Visitors should bow respectfully before speaking in court and avoid interrupting religious discussions.
-
   </div>
 
 </section>
@@ -388,16 +359,11 @@
 
   <img class="image large-image" src="2-Figure3-1.png">
 
-  <p class="caption">
-  Abul Fazl presenting Razmnāma manuscript to Akbar
-  </p>
+  <p class="caption">Abul Fazl presenting Razmnāma manuscript to Akbar</p>
 
   <div class="tip-box">
-
     <strong>Traveler Tip:</strong>
-
     Do not touch the manuscript pages without permission. The illustrated copies are considered priceless works of art.
-
   </div>
 
 </section>
@@ -419,11 +385,11 @@
   </p>
 
   <p>
-  The Razmnāma also demonstrated Akbar’s broader political strategy. By supporting translations of important Hindu texts, Akbar strengthened relationships with Hindu nobles and presented himself as a ruler of all peoples within the Mughal Empire rather than only a Muslim emperor. The project reflected his policy of <em>sulh-i-kul</em>, or “universal peace,” which encouraged tolerance and cooperation between religious communities.
+    The Razmnāma also demonstrated Akbar’s broader political strategy. By supporting translations of important Hindu texts, Akbar strengthened relationships with Hindu nobles and presented himself as a ruler of all peoples within the Mughal Empire rather than only a Muslim emperor. The project reflected his policy of <em>sulh-i-kul</em>, or “universal peace,” which encouraged tolerance and cooperation between religious communities.
   </p>
 
   <p>
-  Few rulers during this period invested so heavily in translating religious texts from another tradition, which made the Razmnāma highly unusual for its time.
+    Few rulers during this period invested so heavily in translating religious texts from another tradition, which made the Razmnāma highly unusual for its time.
   </p>
 
 </section>
@@ -433,18 +399,10 @@
   <h2>Primary Source Spotlight</h2>
 
   <div class="source-box">
-
     “However, since it is the custom of the dust-covered travellers on the highway of supplication to assume that the few matters that they have acquired – in accordance with their insight, knowledge, strength and capability, from the book of perfection and the chapter of gnosis – are free of the contamination of deficiencies, and to present them in the royal pavilion of Oneness and the chamber of Eternity, naming them ‘thankfulness’ and ‘praise of God’ – necessarily I followed the customs and writings of this group and made my pen step on this path.”
-
     <br><br>
-
     — Abu'l-Fazl, court historian of Akbar, late 1500s
-
   </div>
-
-  <p>
-    This quote demonstrates how intellectual life in Akbar's court emphasized scholarship, reflection, and cultural exchange. Abu'l-Fazl's writing reflects the sophisticated literary culture surrounding the Razmnāma project and helps historians understand the importance of knowledge and translation in the Mughal Empire.
-  </p>
 
 </section>
 
@@ -452,7 +410,7 @@
 
   <h2>Bibliography</h2>
 
-  <ul>
+  <ul class="bibliography">
 
     <li>Abd al-Rahim ibn Muhammad Bairam Khan Khan-i Khanan. <em>The White Horse Got Stuck to a Rock in Mount Vindhyachal.</em> Folio from the <em>Razmnama</em>. The Metropolitan Museum of Art, New York. https://www.metmuseum.org/art/collection/search/451317.</li>
 
@@ -474,13 +432,9 @@
 
   <h2>Final Reflection</h2>
 
-  <p>
-    “The pursuit of knowledge is the noblest duty of mankind.” — Attributed to Akbar
-  </p>
+  <p>“The pursuit of knowledge is the noblest duty of mankind.” — Attributed to Akbar</p>
 
-  <p>
-  The Razmnāma reminds modern audiences that translation and cultural exchange have long shaped the development of global civilizations.
-</p>
+  <p>The Razmnāma reminds modern audiences that translation and cultural exchange have long shaped the development of global civilizations.</p>
 
 </footer>
 
